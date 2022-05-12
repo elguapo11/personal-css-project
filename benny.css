@@ -1,0 +1,135 @@
+* {
+  margin: 0px;
+}
+
+.completecontainer {
+  display: flex;
+  background-color: rgb(94, 0, 182);
+  padding: 5px;
+  width: max-content;
+  height: 900px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.smallsquare {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  transition: transform 0.1s;
+  animation: around 3s forwards infinite alternate-reverse;
+}
+
+.completecontainer:hover .smallsquare {
+  animation-play-state: running;
+}
+@keyframes around {
+  from {
+    transform: translate(0, 150px);
+  }
+
+  25% {
+    transform: translate(350px, 0);
+    background-color: beige;
+  }
+  50% {
+    transform: translateY(350px, 150px);
+    background-color: black;
+  }
+
+  75% {
+    transform: translate(0, 150px);
+    background-color: brown;
+  }
+  to {
+    transform: (0, 0);
+  }
+}
+.greece {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(94, 0, 182);
+  padding: 20px;
+  justify-content: center;
+}
+
+article {
+  display: flex;
+  height: fit-content;
+  width: 300px;
+  color: rgb(0, 0, 0);
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.articlebox {
+  display: flex;
+  color: rgb(255, 255, 255);
+  width: 150px;
+  height: fit-content;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  padding: 25px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+img {
+  width: 30%;
+  height: 50%;
+  justify-content: flex-start;
+}
+
+div {
+  color: rgb(60, 0, 53);
+}
+
+textarea {
+  font-family: "Roboto", sans-serif;
+  color: rgb(0, 0, 0);
+  justify-content: center;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+  height: fit-content;
+  width: fit-content;
+}
+
+.inputbox {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  height: fit-content;
+  width: fit-content;
+  padding: 15px;
+  color: rgb(255, 255, 255);
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+form {
+  font-size: 26px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  box-sizing: border-box;
+  width: 300px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+
+  flex-direction: row;
+}
+
+script {
+  background-color: black;
+}
